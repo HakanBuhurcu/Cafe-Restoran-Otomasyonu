@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<VBox fx:id="prepareShiftCont" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox prefHeight="20.0">
+            <children>
+                <Text text="Yeni Vardiya Ekle"/>
+                <VBox prefHeight="3.0" styleClass="hr"/>
+            </children>
+        </VBox>
+        <VBox fx:id="prepareShiftContainer" prefHeight="543.0"/>
+        <HBox fx:id="prepareShiftFooter" spacing="20.0" prefHeight="20.0">
+            <children>
+                <Text text="Vardiya Tamamla" fill="cornflowerblue" onMouseClicked="#acceptShift"></Text>
+                <Text text="Kayıtlı Vardiyayı Görüntüle" fill="cornflowerblue" onMouseClicked="#showShift"></Text>
+
+            </children>
+        </HBox>
+    </children>
+</VBox>

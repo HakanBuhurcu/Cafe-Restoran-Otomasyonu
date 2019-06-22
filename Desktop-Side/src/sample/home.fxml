@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox id="topbar" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefWidth="300.0">
+               <children>
+                  <Text fill="#212a90" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoşgeldin Furkan DEMİR">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+                  <Text fx:id="userName" fill="#b91515" style="-fx-text-fill: darkred" text="(Şube Müdürü-Konyaaltı Şubesi)">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="7.0" />
+                     </HBox.margin></Text>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefWidth="300.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefWidth="300.0">
+               <children>
+                  <Text fill="#212a90" onMouseClicked="#logOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Çıkış Yap">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <VBox id="leftbar" fx:id="leftBar" alignment="TOP_CENTER" prefHeight="584.0" prefWidth="150.0">
+               <children>
+                  <Button fx:id="addproduct" mnemonicParsing="false" onMouseClicked="#openAddNewProduct" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Yeni Ürün Ekle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="updateproduct" mnemonicParsing="false" onMouseClicked="#openUpdateNewProduct" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Ürün Güncelle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="openAddOrderButton" mnemonicParsing="false" onMouseClicked="#openAddOrder" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Yeni Sipariş" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#openSoldProduct" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Satış İstatiği" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#openEmployee" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Çalışanlar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="addstatu" mnemonicParsing="false" onMouseClicked="#openStatu" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Yeni Statü" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="openShiftList" mnemonicParsing="false" onMouseClicked="#openShiftListt" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Vardiya Listesi" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="editcategory" mnemonicParsing="false" onMouseClicked="#openEditCategory" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Kategori Düzenle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="updateTableButon" mnemonicParsing="false" onMouseClicked="#openUpdateTableCount" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Masa Sayısı" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="createShiftButon" mnemonicParsing="false" onMouseClicked="#createShift" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Vardiya Oluştur" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#showLogRecord" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Log Kayıtları" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editBranchButon" mnemonicParsing="false" onMouseClicked="#openEditBranch" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #0099ff;" text="Şubeleri Düzenle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#openComplaint" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #0099ff;" text="Şikayet/İstekler" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox fx:id="sceneContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="584.0" prefWidth="750.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

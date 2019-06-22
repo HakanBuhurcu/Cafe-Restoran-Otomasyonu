@@ -1,0 +1,90 @@
+#sceneLogin {
+    -fx-background-image: url("images/login_bg.jpg");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%; /* cover */
+    -fx-background-repeat: no-repeat;
+}
+
+#topbar {
+    -fx-background-color: #E0E0E0;
+}
+
+#leftbar {
+    -fx-background-color: #FF8A65;
+    -fx-fit-to-height: true;
+}
+
+.hr{
+    -fx-background-color: #FF8A65;
+}
+
+#deleteButton{
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+}
+
+#tableButton{
+    -fx-background-image: url("images/table.jpeg");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%; /* cover */
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+
+#selectedTableBar {
+    -fx-background-color: #FF8A65;
+}
+#soldProducttTable{
+    -fx-font-weight:bold;
+    fx-font-size:15px;
+}
+.deneme{
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold
+
+
+}
+.deneme.label{
+    -fx-text-fill: white;
+}
+#category_list.label{
+    -fx-text-fill: white;
+}
+.context-menu{
+    -fx-background-color: blue;
+}
+#table{
+    -fx-background-color: #FF8A65;
+}
+
+.table-view .column-header-background .label{
+    -fx-text-fill: red;
+}
+.secim > *.label{
+    -fx-text-fill: white;
+}
+.dialog-pane.header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.myDialog{
+    -fx-background-color: darkcyan;
+}
+
+.choice-box > .label { -fx-text-fill: white; }
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+.choice-box .menu-item:focused { -fx-background-color: orange; }
+.my-text{-fx-fill:blue;-fx-font-weight: bold;}
+.urunmetin{-fx-fill: white;-fx-font-weight: bold;-fx-font-size: 18px;}
+.urunlistele{-fx-fill:blue;-fx-font-size: 14px;-fx-font-weight: bold;}
+.siparisbuton{-fx-text-fill:white;-fx-background-color: red;-fx-font-weight: bold;-fx-font-size: 15px}
+.yeni{-fx-background-color: darkorange;}

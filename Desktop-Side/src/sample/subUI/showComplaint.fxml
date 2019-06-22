@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="soldProductContainerr" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Tarih aralığını seçiniz." textFill="#9a1818">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="3.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="39.0" prefWidth="631.0">
+         <children>
+            <Label text="Başlangıç Tarihi:" textFill="#223cc9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="7.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="startDate" prefHeight="32.0" prefWidth="197.0" style="-fx-font-size: 15px;">
+               <HBox.margin>
+                  <Insets left="5.0" top="4.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Label text="Şube:" textFill="#223cc9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="130.0" top="7.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="brChoise" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: darkblue; -fx-font-size: 15px; -fx-font-weight: bold;">
+               <HBox.margin>
+                  <Insets left="7.0" top="4.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="33.0" prefWidth="631.0">
+         <children>
+            <Label text="Bitiş Tarihi:" textFill="#223cc9">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="2.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="endDate" prefHeight="32.0" prefWidth="197.0" style="-fx-font-size: 15px;">
+               <HBox.margin>
+                  <Insets left="46.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Button mnemonicParsing="false" onMouseClicked="#showProductList" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: green;" text="LİSTELE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="23.0" prefWidth="631.0">
+         <children>
+            <Label text="----ŞİKAYET ve İSTEKLER----" textFill="#da0f0f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </Label>
+
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <TableView fx:id="complaintTable" prefHeight="487.0" prefWidth="793.0" style="-fx-font-size: 15px; -fx-font-weight: bold;">
+        <columns>
+          <TableColumn fx:id="dateCol" prefWidth="173.0" style="-fx-font-size: 15px;" text="Tarih" />
+          <TableColumn fx:id="expCol" prefWidth="560.0" style="-fx-font-size: 15px;" text="Açıklama" />
+            <TableColumn fx:id="brCol" prefWidth="186.0" style="-fx-font-size: 15px;" text="Şube" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="813.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#showProductList" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: red;" text="KAYDI SİL!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="400.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

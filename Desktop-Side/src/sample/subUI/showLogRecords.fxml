@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="employeeContainer" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Text fill="darkred" text="--Log Kayıtları--">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="888.0" spacing="20.0">
+         <children>
+            <Text fill="#bf2020" text="Başlangıç Tarihi:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <DatePicker style="-fx-font-size: 15px;" />
+            <Text fill="#bf2020" text="Bitiş Tarihi:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <DatePicker style="-fx-font-size: 15px;" />
+            <Text fill="#bf2020" text="Şube:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="logbrChoise" prefHeight="36.0" prefWidth="182.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-background-color: darkblue;" />
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #4861ea;" text="LİSTELE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="LogTable" editable="true" prefHeight="583.0" prefWidth="750.0" style="-fx-font-size: 15px; -fx-font-weight: bold;">
+        <columns>
+            <TableColumn fx:id="userTcNoCol" minWidth="125.0" prefWidth="139.0" text="Kullanıcı T.C. No" />
+          <TableColumn fx:id="userNameCol" minWidth="111.0" prefWidth="161.0" text="Kullanıcı Ad Soyad" />
+            <TableColumn fx:id="userStatuCol" minWidth="111.0" prefWidth="161.0" text="Kullanıcı Statü" />
+          <TableColumn fx:id="processCol" minWidth="75.0" prefWidth="449.0" text="Yapılan İşlem" />
+          <TableColumn fx:id="processTimeCol" minWidth="0.0" prefWidth="199.0" text="İşlem Saati" />
+        </columns>
+      </TableView>
+      <HBox alignment="TOP_CENTER" spacing="20.0">
+          <children>
+              <Text fill="cornflowerblue" onMouseClicked="#openAddUser" text="Log Kayıtlarını Sil">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Text>
+          </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+
+
+   </children>
+</VBox>

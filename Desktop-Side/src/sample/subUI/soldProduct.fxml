@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<VBox  fx:id="soldProductContainer" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Text fill="darkred" text="30 günlük satış rakamları" />
+      <TableView fx:id="soldProductTable" editable="true" prefHeight="583.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="productIDCol" minWidth="150.0" prefWidth="75.0" text="productID" />
+          <TableColumn fx:id="categoryIDCol" minWidth="150.0" prefWidth="75.0" text="categoryID" />
+          <TableColumn fx:id="nameCol" minWidth="150.0" prefWidth="75.0" text="name" />
+          <TableColumn fx:id="countCol" minWidth="150.0" prefWidth="75.0" text="count" />
+          <TableColumn fx:id="profitCol" minWidth="150.0" prefWidth="-1.0" text="profit" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

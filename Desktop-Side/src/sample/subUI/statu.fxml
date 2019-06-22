@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="statuContainer" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <Text fill="darkred" text="Statüler" />
+      <TableView fx:id="statuTable" editable="true" prefHeight="437.0" prefWidth="881.0" style="-fx-font-size: 15px; -fx-font-weight: bold;">
+        <columns>
+          <TableColumn fx:id="statuIDCol" minWidth="150.0" prefWidth="75.0" text="Statü Kodu" />
+          <TableColumn fx:id="statuNameCol" minWidth="150.0" prefWidth="209.0" text="Statü Adı" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="743.0" spacing="50.0">
+          <children>
+              <Text fill="cornflowerblue" onMouseClicked="#openAddNewStatu" text="Yeni Statü Ekle">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="250.0" />
+               </HBox.margin></Text>
+              <Text fill="cornflowerblue" onMouseClicked="#openUpdateStatu" text="Statü Bilgilerini Güncelle">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <Text fill="cornflowerblue" onMouseClicked="#openAddNewStatu" text="Statüyü Sil">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+          </children>
+      </HBox>
+
+
+   </children>
+</VBox>
